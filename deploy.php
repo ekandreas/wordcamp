@@ -29,9 +29,7 @@ host('185.76.64.176')
 
 task('ftp', function() {
 
-    runLocally("ls -l");
-
-    writeln('OK');
+    writeln(runLocally("git ftp catchup -u \"medkpxfe\" --passwd \"SZ3nl8f4z5\" \"ftp://cpsrv26.misshosting.com/public_html/wordcamp\""));
 
 });
 
