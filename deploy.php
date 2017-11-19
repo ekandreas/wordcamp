@@ -16,8 +16,14 @@ host('45.63.41.239')
     ->user('forge')
     ->set('branch', 'master')
     ->stage('production')
-    ->set('deploy_path', '~/')
+    ->set('deploy_path', '~/default')
     ->identityFile('~/.ssh/id_rsa');
+
+
+
+
+
+
 
 task('pull', function () {
 
