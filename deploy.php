@@ -48,8 +48,8 @@ task('ftp', function() {
         "open ftp://{{user}}:{{pass}}@{$host}; " .
         "lcd /tmp/wordcamp; " .
         "cd {{deploy_path}}; " .
-        "mirror --reverse --delete --use-cache --verbose --allow-chown --allow-suid " .
-        "--no-umask --parallel=2 --exclude-glob .git\"", ['timeout'=>999]);
+        "mirror --reverse --use-cache --verbose --allow-suid " .
+        "--no-umask --parallel=2 --exclude-glob '.git' \"", ['timeout'=>999]);
 
 });
 

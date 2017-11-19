@@ -40,7 +40,8 @@
     "oscarotero/env": "^1",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/redirection": "^2.10",
-    "wpackagist-plugin/akismet": "^4.0"
+    "wpackagist-plugin/akismet": "^4.0",
+    "wpackagist-theme/twentyeleven": "^2.7"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
