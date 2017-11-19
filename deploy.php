@@ -19,6 +19,22 @@ host('45.63.41.239')
     ->set('deploy_path', '~/default')
     ->identityFile('~/.ssh/id_rsa');
 
+host('localhost')
+    ->stage('development');
+
+
+host('185.76.64.176')
+    ->stage('prod2');
+
+
+task('ftp', function() {
+
+    runLocally("ls -l");
+
+    writeln('OK');
+
+});
+
 
 
 task('pull', function () {
